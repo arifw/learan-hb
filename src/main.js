@@ -1,6 +1,8 @@
 require('../node_modules/vuetify/src/stylus/app.styl')
 
 import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Vuex from 'vuex'
 import {
   Vuetify,
   VApp,
@@ -11,8 +13,18 @@ import {
   VIcon,
   VGrid,
   VToolbar,
+  VAvatar,
+  VSubheader,
+  VMenu,
+  VSwitch,
+  VCard,
+  VTextField,
+  VProgressLinear,
   transitions
 } from 'vuetify'
+
+import { routes } from './routes'
+import { storeDef } from './store'
 import App from './App.vue'
 
 Vue.use(Vuetify, {
@@ -25,6 +37,13 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
+    VAvatar,
+    VSubheader,
+    VMenu,
+    VSwitch,
+    VCard,
+    VTextField,
+    VProgressLinear,
     transitions
   },
   theme: {
@@ -38,7 +57,19 @@ Vue.use(Vuetify, {
   }
 })
 
+Vue.use(VueRouter)
+Vue.use(Vuex)
+
+const router = new VueRouter({
+  routes,
+  mode: 'history'
+})
+
+const store = new Vuex.Store(storeDef)
+
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  router,
+  store
 })
