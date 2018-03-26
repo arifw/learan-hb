@@ -27,7 +27,7 @@
         <v-icon class="grey--text text-darken-3">settings</v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn v-if="!$route.path.includes('/remote')" fab top right absolute class="accent" @click="add">
+      <v-btn v-if="!$route.path.includes('/remote')" fab top right absolute class="primary" @click="add">
         <v-icon>add</v-icon>
       </v-btn>
     </v-footer>
