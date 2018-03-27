@@ -22,7 +22,6 @@ import {
   VProgressLinear,
   transitions
 } from 'vuetify'
-
 import { routes } from './routes'
 import { storeDef } from './store'
 import App from './App.vue'

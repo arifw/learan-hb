@@ -1,7 +1,10 @@
 {
   "name": "devenv",
+  "version": "1.0.0",
+  "description": "sdsdssd",
   "build": {
     "nwVersion": "0.29.1"
   },
+  "chromium-args": "--load-extensions='vue-devtools'",
   "main": "http://localhost:8080/"
 }
