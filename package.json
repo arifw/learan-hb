@@ -12,6 +12,7 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "material-design-icons": "^3.0.1",
+    "ping-monitor": "^0.1.6",
     "typeface-roboto": "0.0.54",
     "vue": "^2.5.3",
     "vue-router": "^3.0.1",

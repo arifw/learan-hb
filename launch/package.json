@@ -5,6 +5,16 @@
   "build": {
     "nwVersion": "0.29.1"
   },
-  "chromium-args": "--load-extensions='vue-devtools'",
-  "main": "http://localhost:8080/"
+  "chromium-args": "--load-extensions='./vue-devtools'",
+  "main": "http://localhost:8080/",
+  "node-remote": "http://*/*",
+  "window": {
+    "id": "mainWindow",
+    "title": "Learn HeartBeat",
+    "width": 460,
+    "height": 480,
+    "frame": false,
+    "risizable": true,
+    "position": "center"
+  }
 }

@@ -5,26 +5,8 @@ export const storeDef = {
       {
         _id: 0,
         alias: 'test 1',
-        uri: 'http://localhost:9091',
-        interval: 10
-      },
-      {
-        _id: 1,
-        alias: 'test 2',
-        uri: 'http://localhost:9092',
-        interval: 10
-      },
-      {
-        _id: 2,
-        alias: 'test 3',
-        uri: 'http://localhost:9093',
-        interval: 10
-      },
-      {
-        _id: 3,
-        alias: 'test 4',
-        uri: 'http://localhost:9094',
-        interval: 10
+        uri: 'http://localhost:9090/healt',
+        interval: 5
       }
     ]
   },
